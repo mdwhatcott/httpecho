@@ -14,6 +14,8 @@ func main() {
 			response.WriteHeader(500)
 		} else {
 			fmt.Fprint(response, string(dump))
+			fmt.Println(string(dump))
+			fmt.Println("-------------------------------------------")
 		}
 	})
 
